@@ -4,7 +4,7 @@ maintainer_email  "mkorenkov@gmail.com"
 license           "Apache 2.0"
 description       "lightweight cookbook based on Phil Cohen's chef-percona"
 long_description  "Please refer to README.md"
-version           "0.14.5"
+version           "0.14.6"
 
 depends "apt", ">= 1.9"
 depends "yum", "~> 3.0"
