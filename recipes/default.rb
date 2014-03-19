@@ -1,6 +1,1 @@
-#
-# Cookbook Name:: percona
-# Recipe:: default
-#
-
-include_recipe "percona::client"
+include_recipe 'percona::backup'

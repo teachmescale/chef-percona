@@ -1,8 +1,3 @@
-#
-# Cookbook Name:: percona
-# Recipe:: package_repo
-#
-
 case node['platform_family']
 
 when "debian"

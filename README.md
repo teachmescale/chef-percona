@@ -5,19 +5,7 @@
 
 ## Description
 
-Installs the [Percona
-MySQL](http://www.percona.com/software/percona-server) client and/or
-server components. (We are attempting to leverage the official Opscode
-MySQL cookbook as much as possible.)
-
-Optionally installs:
-
-* [XtraBackup](http://www.percona.com/software/percona-xtrabackup/) hot backup software
-* [Percona Toolkit](http://www.percona.com/software/percona-toolkit/) advanced command-line tools
-* [XtraDB
-Cluster](http://www.percona.com/software/percona-xtradb-cluster/) high
-availability and high scalability solution for MySQL. {DEPRECATED}
-* [Percona Monitoring Plugins](http://www.percona.com/software/percona-monitoring-plugins) various Nagios plugins for monitoring MySQL
+Installs [Percona XtraBackup](http://www.percona.com/software/percona-xtrabackup/) hot backup software
 
 ## Requirements
 
@@ -46,27 +34,6 @@ cause, and we'll make reasonable efforts to improve support:
 * [openssl](http://community.opscode.com/cookbooks/openssl) Opscode Cookbook
 * [yum](http://community.opscode.com/cookbooks/yum) Opscode LWRP Cookbook
 * [mysql](http://community.opscode.com/cookbooks/mysql) Opscode Cookbook
-
-### Chef
-
-We aim to test the most recent releases of Chef 10 and 11. You can view
-the [currently tested versions](https://github.com/phlipper/chef-percona/blob/master/.travis.yml#L12-L13).
-(Feel free to submit a pull request if they're out of date!)
-
-
-## Recipes
-
-* `percona` - The default no-op recipe.
-* `percona::package_repo` - Sets up the package repository and installs common packages.
-* `percona::client` - Installs the Percona MySQL client libraries.
-* `percona::server` - Installs and configures the Percona MySQL server daemon.
-* `percona::backup` - Installs and configures the Percona XtraBackup hot backup software.
-* `percona::toolkit` - Installs the Percona Toolkit software
-* `percona::cluster` - *{DEPRECATED}* Installs the Percona XtraDB Cluster server components
-* `percona::configure_server` - Used internally to manage the server configuration.
-* `percona::replication` - Used internally to grant permissions for replication.
-* `percona::access_grants` - Used internally to grant permissions for recipes.
-* `percona::monitoring` - Installs Percona monitoring plugins for Nagios
 
 ## Usage
 
