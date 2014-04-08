@@ -1,1 +1,1 @@
-include_recipe 'percona::backup'
+include_recipe 'percona-xtrabackup::backup'
