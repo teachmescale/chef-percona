@@ -1,4 +1,4 @@
-include_recipe 'percona::package_repo'
+include_recipe 'percona-xtrabackup::package_repo'
 
 case node['platform_family']
   when 'debian'
